@@ -1,0 +1,9 @@
+<h3>There are {{count}} wrds</h3>
+<a href="{% url 'home' %}">Go Back</a>
+<h4>Your Text</h4>
+{{text}}
+
+{%for word,c in worddict%}
+<br/>
+{{word}} - {{c}}<br/>
+{%endfor%}
